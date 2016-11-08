@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center"
+    android:background="#d6e0f9">
+
+    <ImageView
+        android:layout_margin="0dp"
+        android:layout_width="129dp"
+        android:layout_height="70dp"
+        android:src="@drawable/pants"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            android:src="@drawable/nation"
+            />
+        <Spinner
+            android:id="@+id/bottom_nation_spinner"
+            android:layout_marginTop="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:entries="@array/nation"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="91dp"
+            android:layout_height="46dp"
+            android:src="@drawable/size"/>
+
+        <Spinner
+            android:id="@+id/bottom_size_spinner"
+            android:layout_marginTop="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:entries="@array/nation"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/bottom_cal_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="53dp"
+        android:src="@drawable/cal"
+        android:layout_gravity="center"
+        android:clickable="true"/>
+
+
+</LinearLayout>
